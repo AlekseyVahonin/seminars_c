@@ -13,6 +13,7 @@ if (numberN < 0)
 {
     numberN *= -1;
     flag = 1;
+    Console.Write(" 0,");
 }
 
 int i = 1;
