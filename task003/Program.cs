@@ -5,24 +5,37 @@
 
 
 Console.WriteLine("Введите номер дня недели: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-string[] daysOfWeek = { "Понедельник", "Вторник", "Среда",
-      "Четверг", "Пятница", "Суббота", "Воскресенье" };
-int size = 7;
-int i = 0;
-if (numberA > 0 & numberA <= 7)
+if (number == 1)
 {
-    while (i >= size)
-    {
-        if (numberA == i + 1)
-        {
-            Console.WriteLine(daysOfWeek[i]);
-        }
-    }
-    i++;
+    Console.WriteLine("Понедельник");
+}
+else if (number == 2)
+{
+    Console.WriteLine("Вторник");
+}
+else if (number == 3)
+{
+    Console.WriteLine("Среда");
+}
+else if (number == 4)
+{
+    Console.WriteLine("Четверг");
+}
+else if (number == 5)
+{
+    Console.WriteLine("Пятница");
+}
+else if (number == 6)
+{
+    Console.WriteLine("Суббота");
+}
+else if (number == 7)
+{
+    Console.WriteLine("Воскресенье");
 }
 else
 {
-    Console.WriteLine("Введите целое число от 1 до 7");
+    Console.WriteLine("Введите число от 1 до 7");
 }
