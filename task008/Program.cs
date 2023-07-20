@@ -3,7 +3,7 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.Write("Введите число: ");
+Console.Write("Введите число N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
 Console.Write($"{numberN} ->");
@@ -22,7 +22,7 @@ while (i <= numberN)
     {
         if (flag == 1)
         {
-            if (numberN - i == 0)
+            if (numberN - i == 0 | numberN - i == 1)
             {
                 Console.WriteLine($" {-i}");
             }
@@ -33,7 +33,7 @@ while (i <= numberN)
         }
         else
         {
-            if (numberN - i == 0)
+            if (numberN - i == 0 | numberN - i == 1)
             {
                 Console.WriteLine($" {i}");
             }
