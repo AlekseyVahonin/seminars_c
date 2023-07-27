@@ -6,43 +6,19 @@
 Console.Write("Введите число N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-Console.Write($"{numberN} ->");
-
-int flag = 0;
 if (numberN < 0)
 {
-    numberN *= -1;
-    flag = 1;
-    Console.Write(" 0,");
+    Console.Write("Введите натуральное число (N): ");
 }
-
-int i = 1;
-while (i <= numberN)
-{
-    if (i % 2 == 0)
+else
+{   Console.Write($"{numberN} ->");
+    int i = 1;
+    while (i <= numberN)
     {
-        if (flag == 1)
+        if (i % 2 == 0)
         {
-            if (numberN - i == 0 | numberN - i == 1)
-            {
-                Console.WriteLine($" {-i}");
-            }
-            else
-            {
-                Console.Write($" {-i},");
-            }
+            Console.Write($" {i}");
         }
-        else
-        {
-            if (numberN - i == 0 | numberN - i == 1)
-            {
-                Console.WriteLine($" {i}");
-            }
-            else
-            {
-                Console.Write($" {i},");
-            }
-        }
+        i++;
     }
-    i++;
 }

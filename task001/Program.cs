@@ -12,7 +12,7 @@ Console.WriteLine("Введите второе целое число: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
 
-if(numberA == numberB * numberB)
+if(Math.Abs(numberA) == Math.Abs(numberB * numberB))
 {
 Console.WriteLine($"a = {numberA}, b = {numberB} -> да");
 }
