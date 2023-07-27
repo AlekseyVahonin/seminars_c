@@ -14,7 +14,7 @@ if (FiveDigit(number))
 }
 else
 {
-    Console.WriteLine("Число не питизнаяное");
+    Console.WriteLine("Число не пятизнаяное");
 }
 
 bool FiveDigit(int num)
