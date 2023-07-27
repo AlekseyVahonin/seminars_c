@@ -8,7 +8,7 @@ Console.WriteLine("Введите координату точки A по оси 
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координату точки A по оси Y");
 int y1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату точки A оси Z");
+Console.WriteLine("Введите координату точки A по оси Z");
 int z1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координату точки B по оси X");
 int x2 = Convert.ToInt32(Console.ReadLine());
