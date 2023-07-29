@@ -19,7 +19,7 @@ else
 
 bool FiveDigit(int num)
 {
-    return num / 10000 > 0;
+    return num / 10000 <= 9 && num / 10000 > 0;
 }
 
 bool Polydrome(int numberDigit)
