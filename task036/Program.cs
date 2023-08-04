@@ -41,5 +41,4 @@ int[] array = CreateArrayRndInt(5, -99, 100);
 int sumNonEvenPositionArray = SumNonEvenPositionArray(array);
 
 PrintArray(array);
-Console.Write($" -> {sumNonEvenPositionArray}");
-Console.WriteLine();
+Console.WriteLine($" -> {sumNonEvenPositionArray}");
